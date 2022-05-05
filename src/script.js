@@ -56,6 +56,7 @@ class Ribbon {
         this.geometry.attributes.position.needsUpdate = true;
         this.geometry.computeVertexNormals();
         // this.geometry.computeFaceNormals();
+        this.material.color = new THREE.Color("hsl(" + (100 + 50 * Math.sin(time / 4)) + ", 100%, 50%)");
 
     }
 }
